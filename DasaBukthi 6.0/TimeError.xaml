@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="TimeError"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Border Background="#BDF7F7D4" CornerRadius="25" BorderThickness="2" BorderBrush="#FF545800">
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="29.333" Margin="25"><Run Text="The Time you have selected is not correct."/><LineBreak/><Run Text="Please select a correct time."/><LineBreak/><Run Text="Press enter to continue."/></TextBlock>
+	</Border>
+</UserControl>

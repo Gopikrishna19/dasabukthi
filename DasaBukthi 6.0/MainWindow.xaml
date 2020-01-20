@@ -1,0 +1,577 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:DasaBukthi_6._0" x:Class="MainWindow"
+    Title="Dasa Bukthi 6.0" mc:Ignorable="d" Height="768" Width="1366" WindowState="Maximized" WindowStyle="None" AllowsTransparency="True" Icon="/DasaBukthi%206.0;component/DB6ICO.ico">
+    <Window.Resources>
+        <Storyboard x:Key="OnMouseEnter">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" >
+                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#c0000000"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseLeave">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.OpacityMask).(SolidColorBrush.Color)" >
+                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#80000000"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenNaks">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridNaks">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,100,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,100,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,100,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,100,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,100,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInNaks">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="gridInNaks">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseNaks">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridNaks">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="866,100,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="906,100,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="936,100,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="956,100,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="966,100,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInNaks">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenUdNa">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridUdNa">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,175,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,175,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,175,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,175,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,175,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="UdNaTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridUdNa">
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="UdNaTimer">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseUdNa">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridUdNa">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="876,175,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="916,175,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="946,175,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="966,175,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="976,175,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="UdNaTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="UdNaTimer">
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenMuNa">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridMuNa">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,250,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,250,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,250,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,250,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,250,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="MuNaTimer">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="MuNaTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseMuNa">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridMuNa">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="886,250,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="926,250,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="956,250,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="976,250,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="986,250,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="MuNaTimer">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="MuNaTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenNaIr">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridNaIr">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,325,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,325,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,325,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,325,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,325,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="NaIrTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="NaIrTimer">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseNaIr">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridNaIr">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="896,325,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="936,325,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="966,325,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="986,325,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="996,325,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="NaIrTimer">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="NaIrTimer">
+            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenEval">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridEval">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,400,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInEval">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseEval">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridEval">
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="906,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="946,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1" Value="976,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="996,400,0,0"/>
+            	<EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="1006,400,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInEval">
+            	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenAbout">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridAbout">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,475,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInAbout">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseAbout">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridAbout">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="916,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="956,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="986,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="1006,475,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="1016,475,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInAbout">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownOpenExit">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridExit">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.6" Value="366,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.7" Value="326,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="296,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="276,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="266,550,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInExit">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseDownCloseExit">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="gridExit">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.8" Value="926,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.9" Value="966,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="996,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.1" Value="1016,550,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="1026,550,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="gridInExit">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <ControlTemplate x:Key="MyButtonTemplateExit" TargetType="{x:Type Button}">
+            <ControlTemplate.Resources>
+                <Storyboard x:Key="OnMouseEnter1"/>
+            </ControlTemplate.Resources>
+            <Grid x:Name="grid" Background="#FF00C02F">
+                <Border x:Name="border" BorderBrush="#FF003916" BorderThickness="5" Margin="-5"/>
+                <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ContentPresenter.Effect>
+                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0"/>
+                    </ContentPresenter.Effect>
+                </ContentPresenter>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Margin" TargetName="border" Value="-8"/>
+                    <Setter Property="Effect" TargetName="contentPresenter">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="15" Opacity="1" ShadowDepth="0"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderThickness" TargetName="border" Value="2"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" TargetName="grid" Value="#FF009D26"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FF44ED85"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="MyButtonTemplateExitC" TargetType="{x:Type Button}">
+            <ControlTemplate.Resources>
+                <Storyboard x:Key="OnMouseEnter1"/>
+            </ControlTemplate.Resources>
+            <Grid x:Name="grid" Background="#FFC04600">
+                <Border x:Name="border" BorderBrush="#FF390A00" BorderThickness="5" Margin="-5"/>
+                <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ContentPresenter.Effect>
+                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0"/>
+                    </ContentPresenter.Effect>
+                </ContentPresenter>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Margin" TargetName="border" Value="-8"/>
+                    <Setter Property="Effect" TargetName="contentPresenter">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="15" Opacity="1" ShadowDepth="0"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderThickness" TargetName="border" Value="2"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" TargetName="grid" Value="#FF9D0000"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FFED8244"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <Storyboard x:Key="AboutGridCreditAnimation" RepeatBehavior="Forever">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="CreditsBox">
+                <EasingThicknessKeyFrame KeyTime="0" Value="10,0,0,-340"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:10" Value="10,0,0,200"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/DB6BG.png"/>
+    </Window.Background>
+    <Grid x:Name="layout">
+        <Border x:Name="gridNaks" HorizontalAlignment="Left" Margin="966,100,0,0" VerticalAlignment="Top" Width="1366" Height="675" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        	<Grid>
+        		<TextBlock HorizontalAlignment="Left" Margin="17,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="N" TextDecorations="Underline"/><Run Text="akshathram"/></TextBlock>
+				<Grid x:Name="gridInNaks" HorizontalAlignment="Left" Height="300" Margin="75,0,0,0" Width="600" Opacity="0">
+        		<StackPanel HorizontalAlignment="Left" Height="300" Margin="0" Width="600" Orientation="Horizontal" >
+        			<StackPanel x:Name="listNaks" Height="300" Width="300" Margin="0">
+        				<TextBlock x:Name="naksPrev" TextWrapping="Wrap" Text="Rohini" FontSize="29.333" TextAlignment="Center" Height="40" Margin="0,30"/>
+        				<TextBlock x:Name="naksCurr" TextWrapping="Wrap" Text="Mirugasheersham" FontSize="29.333" TextAlignment="Center" Height="40" Margin="0,30"/>
+        				<TextBlock x:Name="naksNext" TextWrapping="Wrap" Text="Thivadhirai" FontSize="29.333" TextAlignment="Center" Height="40" Margin="0,30"/>
+        			</StackPanel>
+        			<Grid Height="100" Width="75"/>
+        			<StackPanel Width="225">
+        				<Border Height="160" BorderThickness="2,2,0,2" CornerRadius="15" Margin="0,70,0,0">
+        					<Border.BorderBrush>
+        						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        							<LinearGradientBrush.RelativeTransform>
+        								<TransformGroup>
+        									<ScaleTransform CenterY="0.5" CenterX="0.5"/>
+        									<SkewTransform CenterY="0.5" CenterX="0.5"/>
+        									<RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+        									<TranslateTransform/>
+        								</TransformGroup>
+        							</LinearGradientBrush.RelativeTransform>
+        							<GradientStop Color="#00075408" Offset="0.004"/>
+        							<GradientStop Color="#FF075408" Offset="0.134"/>
+        						</LinearGradientBrush>
+        					</Border.BorderBrush>
+        					<StackPanel>
+        						<TextBlock x:Name="dasaiName" TextWrapping="Wrap" FontSize="29.333" Padding="10,0,0,0" Height="40" Margin="0,10,0,0" Text="Chandra"/>
+        						<TextBlock TextWrapping="Wrap" Text="Dasai" FontSize="29.333" TextAlignment="Right" Padding="0,0,10,0" Height="40" Margin="0,-25,0,0"/>
+        						<Grid Margin="0,20,0,0">
+        							<TextBlock x:Name="dasaiYear" TextWrapping="Wrap" Text="0" FontSize="29.333" Padding="0" Height="40" Margin="0,0,120,0" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        							<TextBlock TextWrapping="Wrap" Text="     Years" FontSize="29.333" Padding="0,0,10,0" Height="40" Margin="40.813,0,0,0" VerticalAlignment="Top" TextAlignment="Right" HorizontalAlignment="Right" Width="120"/>
+        						</Grid>
+        					</StackPanel>
+        				</Border>
+        				<RepeatButton Content="Button" Width="70" Height="70" Template="{DynamicResource ScrollDownNaksBtn}" IsTabStop="False" Focusable="False" Margin="0,-20,0,0" x:Name="ScrollNaksDown" Interval="100" />
+        				<RepeatButton x:Name="ScrollNaksUp" Content="Button" Width="70" Height="70" Template="{DynamicResource ScrollUpNaksBtn}" IsTabStop="False" Focusable="False" Margin="0,-450,0,0" Interval="100" />
+        			</StackPanel>
+        			<Grid Width="100"/>
+        		</StackPanel>
+        		<Grid HorizontalAlignment="Left" Height="135" Margin="0" Width="384">
+        			<Grid.Background>
+                            <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/DB6NAV.png"/>
+        			</Grid.Background>
+        		</Grid>
+				</Grid>
+        	</Grid>
+        </Border>
+        <Border x:Name="gridUdNa" HorizontalAlignment="Left" Margin="976,175,0,0" VerticalAlignment="Top" Width="1366" Height="600" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        	<Grid>
+        		<TextBlock HorizontalAlignment="Left" Margin="15,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="U" TextDecorations="Underline"/><Run Text="dhayadhi Naaligai"/></TextBlock>
+        		<local:Timer HorizontalAlignment="Left" Margin="50,0,0,0" x:Name="UdNaTimer" Opacity="0" />
+        	</Grid>
+        </Border>
+        <Border x:Name="gridMuNa" HorizontalAlignment="Left" Margin="986,250,0,0" VerticalAlignment="Top" Width="1366" Height="525" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="15,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="M" TextDecorations="Underline"/><Run Text="undhaya Nakshathram"/></TextBlock>
+                <local:Timer HorizontalAlignment="Left" Margin="50,0,0,0" x:Name="MuNaTimer" Opacity="0" />
+            </Grid>
+        </Border>
+        <Border x:Name="gridNaIr" HorizontalAlignment="Left" Margin="996,325,0,0" VerticalAlignment="Top" Width="1366" Height="450" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="15,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="Nakshathra "/><Run Text="I" TextDecorations="Underline"/><Run Text="ruppu"/></TextBlock>
+                <local:Timer HorizontalAlignment="Left" Margin="50,0,0,0" x:Name="NaIrTimer" Opacity="0" />
+            </Grid>
+        </Border>
+        <Border x:Name="gridEval" HorizontalAlignment="Left" Margin="1006,400,0,0" VerticalAlignment="Top" Width="1366" Height="375" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        	<Grid>
+        		<TextBlock HorizontalAlignment="Left" Margin="17,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="E" TextDecorations="Underline"/><Run Text="valuate"/></TextBlock>
+        		<Grid x:Name="gridInEval" Margin="75,0,0,0" Width="600" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0">
+        			<StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+        				<TextBlock TextWrapping="Wrap" Text="Sellu" FontSize="26.667" FontWeight="Bold"/>
+        				<StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+        					<TextBlock x:Name="syr" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="smn" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="sdy" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="sna" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="svi" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        				</StackPanel>
+        				<TextBlock TextWrapping="Wrap" Text="Iruppu" FontSize="26.667" FontWeight="Bold"/>
+        				<StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+        					<TextBlock x:Name="iyr" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="imn" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="idy" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="ina" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        					<TextBlock x:Name="ivi" TextWrapping="Wrap" Text="00" Margin="10,0" FontSize="26.667" FontWeight="Bold" Padding="20,0"/>
+        				</StackPanel>
+        			</StackPanel>
+        		</Grid>
+        	</Grid>
+        </Border>
+        <Border x:Name="gridAbout" HorizontalAlignment="Left" Margin="1016,475,0,0" VerticalAlignment="Top" Width="1366" Height="300" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <TextBlock Margin="15,15,0,0" TextWrapping="Wrap" FontSize="29.333" FontWeight="Bold" d:LayoutOverrides="Height" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Text="A" TextDecorations="Underline"/><Run Text="bout"/></TextBlock>
+                <Border x:Name="gridInAbout" HorizontalAlignment="Left" Margin="25,60,0,0" VerticalAlignment="Top" Width="650" Height="200" CornerRadius="10" BorderThickness="1" BorderBrush="#FF838383" Opacity="0">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#CCF7F7D4" Offset="0.1"/>
+                            <GradientStop Color="#CCF7F7D4" Offset="0.9"/>
+                            <GradientStop Color="DarkGray"/>
+                            <GradientStop Color="DarkGray" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <StackPanel Orientation="Horizontal">
+                        <Grid Width="346" Margin="0" x:Name="CreditGrid">
+                            <TextBlock x:Name="CreditsBox" TextWrapping="Wrap" Margin="10,0,0,-372" Foreground="#FF054100" MaxWidth="336" MaxHeight="340" MinWidth="336" MinHeight="340" HorizontalAlignment="Center" VerticalAlignment="Bottom"><Run FontWeight="Bold" FontSize="40" Text="Dasa Bukthi"/><LineBreak/><Run FontStyle="Italic" Text="Version : 6.0.1.2012"/><LineBreak/><Run/><LineBreak/><Run FontSize="16" Text="Copyright "/><Run FontSize="16" FontFamily="Arial" Text="© 2012 SJPN. All Rights Reserved."/><LineBreak/><Run FontFamily="Arial"/><LineBreak/><Run FontWeight="Bold" FontSize="17.333" FontFamily="Arial" Text="Developed by :"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial" Text="Gopikrishna S"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial"/><LineBreak/><Run FontWeight="Bold" FontSize="17.333" FontFamily="Arial" Text="Design &amp; Programming :"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial" Text="Gopikrishna S"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial"/><LineBreak/><Run FontWeight="Bold" FontSize="17.333" FontFamily="Arial" Text="Graphics &amp; Animation :"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial" Text="Gopikrishna S"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial"/><LineBreak/><Run FontWeight="Bold" FontStyle="Italic" FontSize="17.333" FontFamily="Arial" Text="A Product of SJPN" TextDecorations="Underline"/><LineBreak/><Run FontSize="17.333" FontFamily="Arial"/></TextBlock>
+                        </Grid>
+                        <Grid Margin="0,10" Width="292">
+                            <Grid.OpacityMask>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#01FFFFFF" Offset="0"/>
+                                    <GradientStop Offset="1"/>
+                                    <GradientStop Color="White" Offset="0.1"/>
+                                    <GradientStop Color="White" Offset="0.9"/>
+                                </LinearGradientBrush>
+                            </Grid.OpacityMask>
+                            <Grid.Background>
+                                <ImageBrush ImageSource="pack://siteoforigin:,,,/Images/DB6LOGO.png"/>
+                            </Grid.Background>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Width="50"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+        <Border x:Name="gridExit" HorizontalAlignment="Left" Margin="1026,550,0,0" VerticalAlignment="Top" Width="1366" Height="225" OpacityMask="#80000000" BorderThickness="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1A1A1" Offset="0.677"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.74,1.124" MappingMode="RelativeToBoundingBox" StartPoint="0.124,-0.202">
+                    <GradientStop Color="#FFc6c6c6" Offset="0.983"/>
+                    <GradientStop Color="#FFF7F7D4"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="15,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="29.333" FontWeight="Bold"><Run Text="E"/><Run Text="x" TextDecorations="Underline"/><Run Text="it"/></TextBlock>
+                <Grid x:Name="gridInExit" HorizontalAlignment="Left" Margin="125,50,0,0" VerticalAlignment="Top" Width="550" Height="150" Opacity="0">
+                    <TextBlock HorizontalAlignment="Left" Margin="25,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#FF003906"><Run Text="Are you sure you want to exit?"/></TextBlock>
+                    <Button Content="Yes" Height="26.312" Width="78.935" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,250,25" Template="{DynamicResource MyButtonTemplateExit}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" FontWeight="Bold" x:Name="btnExitYes" IsTabStop="False" Focusable="False"/>
+                    <Button Content="Cancel" Height="26.312" Width="78.935" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,150,25" Template="{DynamicResource MyButtonTemplateExitC}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" FontWeight="Bold" x:Name="btnExitCancel" IsTabStop="False" Focusable="False"/>
+                    <Button Content="Reset" Height="26.312" Width="78.935" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,25" Template="{DynamicResource MyButtonTemplateExit}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="16" FontWeight="Bold" x:Name="btnExitReset" IsTabStop="False" Focusable="False"/>
+                </Grid>
+            </Grid>
+        </Border>
+        <Frame x:Name="ErrorNav" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden" Background="#80F7F7D4"/>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="PathError"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Border Background="#BDF7F7D4" CornerRadius="25" BorderThickness="2" BorderBrush="#FF545800">
+		<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="29.333" Margin="25"><Run Text="There is conflict in the Patham."/><LineBreak/><Run/><InlineUIContainer>
+				<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+					<Button x:Name="btnp1" Content="Patham 1" Margin="0,10" Padding="10"/>
+					<Button x:Name="btnp4" Content="Patham 4" Margin="0,10" Padding="10"/>
+				</StackPanel>
+			</InlineUIContainer></TextBlock>
+	</Border>
+</UserControl>
