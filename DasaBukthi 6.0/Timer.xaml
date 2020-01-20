@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Timer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DasaBukthi_6._0" 
+             MinHeight="250" MinWidth="600" MaxHeight="250" MaxWidth="600">
+    <StackPanel Orientation="Horizontal">
+        <local:TimerJog x:Name="NaTen" LowerLimit="0" UpperLimit="6" IsTimerJogFocused="False" />
+        <local:TimerJog x:Name="NaOne" LowerLimit="0" UpperLimit="9"/>
+        <TextBlock TextAlignment="Center" Text=":" Foreground="#FF174B00" FontSize="64" Width="100" VerticalAlignment="Center" Margin="0,-25,0,0">
+            	<TextBlock.Effect>
+            		<DropShadowEffect ShadowDepth="0" BlurRadius="20"/>
+            	</TextBlock.Effect>
+        </TextBlock>
+        <local:TimerJog x:Name="ViTen" LowerLimit="0" UpperLimit="5"/>
+        <local:TimerJog x:Name="ViOne" LowerLimit="0" UpperLimit="9"/>
+    </StackPanel>
+</UserControl>

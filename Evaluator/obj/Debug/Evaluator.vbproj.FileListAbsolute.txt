@@ -1,0 +1,8 @@
+D:\Projects\DasaBukthi 6.0\Evaluator\obj\Debug\Evaluator.Resources.resources
+D:\Projects\DasaBukthi 6.0\Evaluator\bin\Debug\Evaluator.dll
+D:\Projects\DasaBukthi 6.0\Evaluator\bin\Debug\Evaluator.pdb
+D:\Projects\DasaBukthi 6.0\Evaluator\bin\Debug\Evaluator.xml
+D:\Projects\DasaBukthi 6.0\Evaluator\obj\Debug\Evaluator.dll
+D:\Projects\DasaBukthi 6.0\Evaluator\obj\Debug\Evaluator.xml
+D:\Projects\DasaBukthi 6.0\Evaluator\obj\Debug\Evaluator.pdb
+D:\Projects\DasaBukthi 6.0\Evaluator\obj\Debug\Evaluator.vbproj.GenerateResource.Cache

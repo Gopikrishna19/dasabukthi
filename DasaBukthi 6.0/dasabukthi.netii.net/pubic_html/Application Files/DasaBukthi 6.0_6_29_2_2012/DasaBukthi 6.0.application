@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="DasaBukthi 6.0.application" version="6.29.2.2012" publicKeyToken="1e00860a0722e1c0" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Microsoft" asmv2:product="DasaBukthi 6.0" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://dasabukthi.netii.net/DasaBukthi%206.0.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\DasaBukthi 6.0_6_29_2_2012\DasaBukthi 6.0.exe.manifest" size="9097">
+      <assemblyIdentity name="DasaBukthi 6.0.exe" version="6.29.2.2012" publicKeyToken="1e00860a0722e1c0" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>XBtxK+l7R0EvxhFRaBkE+0j44/E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Gopi-PC\Gopi" issuerKeyHash="4c9c8f36e48d3948ccc14a9ed34c7242053e356e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FpI1gh34rz0YGxFPfrrACowxdRU=</DigestValue></Reference></SignedInfo><SignatureValue>M/Iwjcou7TQch2gvs8/DH7H5sOEx1FDzb7Gowp0OkG21+F3zSLoMp1naH19QY9bJ8Gnd+AJJqK1vLaxbTqX1dkNiyA0yMSmsvQhHbKEAwbEHur1OOAnKqC7Npa4FLpJSvW1BT50+W1yMsymyE0CDHll8KtydAR7YVu/h+oCNx+w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nu2e/R6bGXFm50n3l0nvIAWGcVLa3akeo9+vtB4oZpQayiBbQx0/8phrZIgfo+Mh3p+khNkw9BhcDDGlvatYjiOEeE+N5lYVGc3xjeebxQ9CjNOzaJPuJO4FhPw4rWiUjlKXzpVMf1YtoJZT21vDU8056NbAFEnFE2y+ncg2neE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1575318c0ac0ba7e4f111b183daff81d82359216" Description="" Url=""><as:assemblyIdentity name="DasaBukthi 6.0.application" version="6.29.2.2012" publicKeyToken="1e00860a0722e1c0" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Gopi-PC\Gopi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>PRJGZUmZ8Z1NjNAHJ56aqwP6xeo=</DigestValue></Reference></SignedInfo><SignatureValue>na7OOKo9czsN/g5lGPF6VjG5ZphfVbaN8RCVDDZYQzv2SIKixDWYUiya9U89W5jF4C4f2z5CbzCNK5blt3pExdA1lB2Ru1Xa3QRUwHG7ZdH0PIDcCKqsZ5fxKdo9hED2JcPuwwVWPxDWcrNWpC8m5BpJgt5epuvlQZv/qFQ5wMM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nu2e/R6bGXFm50n3l0nvIAWGcVLa3akeo9+vtB4oZpQayiBbQx0/8phrZIgfo+Mh3p+khNkw9BhcDDGlvatYjiOEeE+N5lYVGc3xjeebxQ9CjNOzaJPuJO4FhPw4rWiUjlKXzpVMf1YtoJZT21vDU8056NbAFEnFE2y+ncg2neE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQFMGde9JUVI5BWnmRVOxyiTANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgARwBvAHAAaQAtAFAAQwBcAEcAbwBwAGkwHhcNMTIwMzAxMTgwNTM4WhcNMTMwMzAyMDAwNTM4WjAjMSEwHwYDVQQDHhgARwBvAHAAaQAtAFAAQwBcAEcAbwBwAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ7tnv0emxlxZudJ95dJ7yAFhnFS2t2pHqPfr7QeKGaUGsogW0MdP/KYa2SIH6PjId6fpITZMPQYXAwxpb2rWI4jhHhPjeZWFRnN8Y3nm8UPQozTs2iT7iTuBYT8OK1olI5Sl86VTH9WLaCWU9tbw1PNOejWwBRJxRNsvp3INp3hAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAPmuS1pnvl0dlkk60pVWSQaO+v9T11D1Kvthjs6USS2SQ3Lx/1ZQWXiW1gEa2oJioXC2TO9SrDtjvWvsR24nlW6GlTSzE9qdIXXtbkm8WTlnkOlfSMdIJIcrU4JCAlnX9TrFywPCco3h3I2uts2LzwoxJBdWaSl0/wWSA+ObixW4=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

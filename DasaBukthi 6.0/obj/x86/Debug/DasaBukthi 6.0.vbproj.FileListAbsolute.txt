@@ -1,0 +1,128 @@
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.exe
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.pdb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.xml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbprojResolveAssemblyReference.cache
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.baml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.g.vb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.g.vb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.cache
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.g.resources
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi_6._0.Resources.resources
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbproj.GenerateResource.Cache
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.xml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.pdb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_Content.g.vb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6BG.png
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6LOGO.png
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollDown.png
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollUp.png
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6NAV.png
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.baml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.g.vb
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.baml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.g.vb
+C:\Users\Gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.baml
+C:\Users\Gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.lref
+C:\Users\Gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Templates.baml
+C:\Users\Gopi\documents\visual studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.xml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.pdb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6BG.png
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6LOGO.png
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollDown.png
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollUp.png
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6NAV.png
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.exe
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.pdb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.xml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbprojResolveAssemblyReference.cache
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Templates.baml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.baml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_Content.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.cache
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.lref
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.baml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.baml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.baml
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.g.resources
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi_6._0.Resources.resources
+E:\gopi\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbproj.GenerateResource.Cache
+C:\Users\Gopikrishna\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe
+C:\Users\Gopikrishna\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.xml
+C:\Users\Gopikrishna\Documents\Visual Studio 2010\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.pdb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.xml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.pdb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6BG.png
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6LOGO.png
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollDown.png
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollUp.png
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6NAV.png
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.exe
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.pdb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.xml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbprojResolveAssemblyReference.cache
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Templates.baml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.baml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_Content.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.cache
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.lref
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.baml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.baml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.baml
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.g.resources
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi_6._0.Resources.resources
+G:\Documents\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbproj.GenerateResource.Cache
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.xml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.pdb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6BG.png
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6LOGO.png
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollDown.png
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6ScrollUp.png
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Images\DB6NAV.png
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.exe
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.pdb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.xml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Templates.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Application.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_Content.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.cache
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0_MarkupCompile.lref
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\MainWindow.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\Timer.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimerJog.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.g.resources
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi_6._0.Resources.resources
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimeError.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\TimeError.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\SameError.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\SameError.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\PathError.baml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\PathError.g.vb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.exe.manifest
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\DasaBukthi 6.0.application
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.exe.manifest
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.application
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Evaluator.dll
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Evaluator.pdb
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\bin\Debug\Evaluator.xml
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbprojResolveAssemblyReference.cache
+D:\Projects\DasaBukthi 6.0\DasaBukthi 6.0\obj\x86\Debug\DasaBukthi 6.0.vbproj.GenerateResource.Cache
